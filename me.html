@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mechanical Engineering Department</title>
+    <style>
+      .group:hover .dropdown {
+        display: block;
+      }
+
+      .dropdown a:hover {
+        background-color: #4a5568; /* slightly lighter on hover */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <nav class="bg-gray-800 shadow-md">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="text-xl font-bold text-blue-400">
+            Prabhat Engineering College
+          </div>
+
+          <div class="md:hidden">
+            <button id="menuToggle" class="text-white focus:outline-none">
+              ☰
+            </button>
+          </div>
+
+          <ul class="hidden md:flex space-x-6 items-center dropdown">
+            <li class="relative group">
+              <a href="#aboutus" class="hover:text-blue-400">About Us</a>
+              <ul
+                class="absolute left-0 mt-0 w-56 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="about-college.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >About College</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="director-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Director Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="chairman-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Chairman Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="administrator-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Administrator Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="principal-diploma-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Principal Diploma Message</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#courses" class="hover:text-blue-400">Courses</a>
+              <ul
+                class="absolute left-0 mt-0 w-72 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a href="cse.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Computer Science and Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ece.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Electronics and Communication Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ash.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Applied Science and Humanities</a
+                  >
+                </li>
+                <li>
+                  <a href="ee.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Electrical Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="me.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Mechanical Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ce.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Civil Engineering</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="polytechnic.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Polytechnic</a
+                  >
+                </li>
+                <li>
+                  <a href="mba.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >MBA</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#training" class="hover:text-blue-400"
+                >Training & Placement</a
+              >
+              <ul
+                class="absolute left-0 mt-0 w-60 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="tpcell.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Training & Placement Cell</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tpmessage.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Message from T&P Cell</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#admission" class="hover:text-blue-400">Admission</a>
+              <ul
+                class="absolute left-0 mt-0 w-56 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="registration.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Online Registration</a
+                  >
+                </li>
+                <li>
+                  <a href="fee.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Fee Structure</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="gallery.html" class="hover:text-blue-400">Gallery</a>
+            </li>
+
+            <li class="relative group">
+              <a href="#feedback" class="hover:text-blue-400">Feedback</a>
+              <ul
+                class="absolute left-0 mt-0 w-48 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="faculty-feedback.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Faculty</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="student-feedback.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Student</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="payment.html" class="hover:text-blue-400"
+                >Online Payment</a
+              >
+            </li>
+            <li>
+              <a href="career.html" class="hover:text-blue-400">Career</a>
+            </li>
+            <li>
+              <a href="contactus.html" class="hover:text-blue-400"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="md:hidden hidden flex-col space-y-2 py-4 text-sm"
+        >
+          <a href="#aboutus" class="block text-gray-300 hover:text-white"
+            >About Us</a
+          >
+          <a href="#courses" class="block text-gray-300 hover:text-white"
+            >Courses</a
+          >
+          <a href="#training" class="block text-gray-300 hover:text-white"
+            >Training & Placement</a
+          >
+          <a href="#admission" class="block text-gray-300 hover:text-white"
+            >Admission</a
+          >
+          <a href="gallery.html" class="block text-gray-300 hover:text-white"
+            >Gallery</a
+          >
+          <a href="#feedback" class="block text-gray-300 hover:text-white"
+            >Feedback</a
+          >
+          <a href="payment.html" class="block text-gray-300 hover:text-white"
+            >Online Payment</a
+          >
+          <a href="career.html" class="block text-gray-300 hover:text-white"
+            >Career</a
+          >
+          <a href="contactus.html" class="block text-gray-300 hover:text-white"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </nav>
+    <header class="bg-gray-800 py-6">
+      <div class="container mx-auto px-4">
+        <h1 class="text-3xl font-bold">Mechanical Engineering</h1>
+        <p class="text-yellow-400 mt-2">Home - Mechanical Engineering</p>
+      </div>
+    </header>
+
+    <section class="bg-gray-900 py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-4">About the Department</h2>
+        <p class="mb-6">
+          The Department of Mechanical Engineering offers comprehensive programs
+          designed to equip students with the necessary technical skills and
+          practical experience in various areas of mechanical systems,
+          automation, and manufacturing processes.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-gray-800 py-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-blue-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-yellow-400 mb-4">Vision</h3>
+          <p>
+            To provide exceptional education in Mechanical Engineering,
+            fostering research, innovation, and practical skills to prepare
+            graduates for industry challenges and leadership roles.
+          </p>
+        </div>
+        <div class="bg-blue-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-yellow-400 mb-4">Mission</h3>
+          <ul class="list-disc pl-5">
+            <li>
+              Teaching - Deliver high-quality education to develop skilled
+              mechanical engineers ready for global challenges.
+            </li>
+            <li>
+              Research - Promote research and development in key areas such as
+              Applied Mechanics, Manufacturing, and Robotics.
+            </li>
+            <li>
+              Service - Engage with industry to solve practical problems through
+              innovative mechanical solutions.
+            </li>
+            <li>
+              Linkage - Collaborate with research organizations and industry to
+              provide hands-on experience and professional exposure.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-900 py-12">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-center"
+      >
+        <div class="md:col-span-2">
+          <h3 class="text-2xl font-bold mb-4">HOD Desk Message</h3>
+          <p class="mb-4">
+            Our Mechanical Engineering department is committed to imparting
+            knowledge in mechanical design, manufacturing processes, and
+            automation. We aim to nurture innovative thinking and
+            problem-solving skills in our students, preparing them for careers
+            in diverse mechanical fields.
+          </p>
+        </div>
+        <div class="text-center">
+          <img
+            src="https://www.prabhatengg.co.in/images/dharmraj.png"
+            alt="Mr. Dharmraj"
+            class="rounded-lg mx-auto mb-4"
+          />
+          <p class="font-bold">Mr. Dharmraj</p>
+          <p>HOD, ME Department</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 py-6">
+      <div class="container mx-auto px-4 text-center">
+        <p>
+          &copy; 2025 Mechanical Engineering Department. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  const toggleBtn = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  toggleBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>

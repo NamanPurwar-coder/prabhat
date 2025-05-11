@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .group:hover .dropdown {
+        display: block;
+      }
+
+      .dropdown a:hover {
+        background-color: #4a5568; /* slightly lighter on hover */
+      }
+    </style>
+    <title>Department Pages</title>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <nav class="bg-gray-800 shadow-md">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="text-xl font-bold text-blue-400">
+            Prabhat Engineering College
+          </div>
+
+          <div class="md:hidden">
+            <button id="menuToggle" class="text-white focus:outline-none">
+              ☰
+            </button>
+          </div>
+
+          <ul class="hidden md:flex space-x-6 items-center dropdown">
+            <li class="relative group">
+              <a href="#aboutus" class="hover:text-blue-400">About Us</a>
+              <ul
+                class="absolute left-0 mt-0 w-56 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="about-college.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >About College</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="director-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Director Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="chairman-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Chairman Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="administrator-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Administrator Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="principal-diploma-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Principal Diploma Message</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#courses" class="hover:text-blue-400">Courses</a>
+              <ul
+                class="absolute left-0 mt-0 w-72 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a href="cse.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Computer Science and Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ece.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Electronics and Communication Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ash.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Applied Science and Humanities</a
+                  >
+                </li>
+                <li>
+                  <a href="ee.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Electrical Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="me.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Mechanical Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ce.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Civil Engineering</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="polytechnic.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Polytechnic</a
+                  >
+                </li>
+                <li>
+                  <a href="mba.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >MBA</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#training" class="hover:text-blue-400"
+                >Training & Placement</a
+              >
+              <ul
+                class="absolute left-0 mt-0 w-60 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="tpcell.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Training & Placement Cell</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tpmessage.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Message from T&P Cell</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#admission" class="hover:text-blue-400">Admission</a>
+              <ul
+                class="absolute left-0 mt-0 w-56 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="registration.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Online Registration</a
+                  >
+                </li>
+                <li>
+                  <a href="fee.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Fee Structure</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="gallery.html" class="hover:text-blue-400">Gallery</a>
+            </li>
+
+            <li class="relative group">
+              <a href="#feedback" class="hover:text-blue-400">Feedback</a>
+              <ul
+                class="absolute left-0 mt-0 w-48 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="faculty-feedback.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Faculty</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="student-feedback.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Student</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="payment.html" class="hover:text-blue-400"
+                >Online Payment</a
+              >
+            </li>
+            <li>
+              <a href="career.html" class="hover:text-blue-400">Career</a>
+            </li>
+            <li>
+              <a href="contactus.html" class="hover:text-blue-400"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="md:hidden hidden flex-col space-y-2 py-4 text-sm"
+        >
+          <a href="#aboutus" class="block text-gray-300 hover:text-white"
+            >About Us</a
+          >
+          <a href="#courses" class="block text-gray-300 hover:text-white"
+            >Courses</a
+          >
+          <a href="#training" class="block text-gray-300 hover:text-white"
+            >Training & Placement</a
+          >
+          <a href="#admission" class="block text-gray-300 hover:text-white"
+            >Admission</a
+          >
+          <a href="gallery.html" class="block text-gray-300 hover:text-white"
+            >Gallery</a
+          >
+          <a href="#feedback" class="block text-gray-300 hover:text-white"
+            >Feedback</a
+          >
+          <a href="payment.html" class="block text-gray-300 hover:text-white"
+            >Online Payment</a
+          >
+          <a href="career.html" class="block text-gray-300 hover:text-white"
+            >Career</a
+          >
+          <a href="contactus.html" class="block text-gray-300 hover:text-white"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </nav>
+    <header class="bg-gray-800 py-6">
+      <div class="container mx-auto px-4">
+        <h1 class="text-3xl font-bold">MBA</h1>
+        <p class="text-yellow-400 mt-2">Home - MBA</p>
+      </div>
+    </header>
+
+    <section class="bg-gray-900 py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-4">About the Department</h2>
+        <p class="mb-6">
+          An MBA programme provides a graduate with a flexible degree which can
+          help increase the awareness of general business knowledge and enhance
+          understanding in any particular business domain. Typically an MBA
+          helps the graduate to become more marketable across a wider range of
+          work-profiles and across countries, move upwards in a company into
+          managerial cadre, develop an extensive professional network or even
+          set up one’s own business.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-gray-800 py-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-blue-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-yellow-400 mb-4">Vision</h3>
+          <p>
+            To Create an Environment of intellectual vibrancy and harnessing the
+            best research and Management practices, we aim to develop globally
+            competitive women managers with a concern for society.
+          </p>
+        </div>
+        <div class="bg-blue-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-yellow-400 mb-4">Mission</h3>
+          <p>
+            The Department Endeavors to Develop students into a new generation
+            of leaders who possess love for truth, critical Intelligence to
+            pursue it, and eloquence to articulate it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-900 py-12">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-center"
+      >
+        <div class="md:col-span-2">
+          <h3 class="text-2xl font-bold mb-4">HOD Desk Message</h3>
+          <p class="mb-4">
+            The MBA department provides a conducive environment for learning
+            with its vibrant and contemporary curriculum, experienced full time
+            faculty, and hands-on experience gained by working on projects,
+            organizing events, etc., by the students themselves. The course is
+            delivered through a slew of modern teaching techniques such as Case
+            Study Method, Lecture Method, Seminars, Conferences, Field Visits,
+            Group Projects, Role Playing, Experimental Learning and Simulated
+            Exercises to give the students an opportunity to learn by doing.
+          </p>
+        </div>
+        <div class="text-center">
+          <img
+            src="https://www.prabhatengg.co.in/images/gaurav_dadaraya.jpg"
+            alt="Gaurav Dadaraya"
+            class="rounded-lg mx-auto mb-4"
+          />
+          <p class="font-bold">Gaurav Dadaraya</p>
+          <p>HOD, MBA Department</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 py-6">
+      <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2025 Department Pages. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  const toggleBtn = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  toggleBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>

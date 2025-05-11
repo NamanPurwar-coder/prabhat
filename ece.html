@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .group:hover .dropdown {
+        display: block;
+      }
+
+      .dropdown a:hover {
+        background-color: #4a5568; /* slightly lighter on hover */
+      }
+    </style>
+    <title>Electronics & Communication Engineering Department</title>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <nav class="bg-gray-800 shadow-md">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="text-xl font-bold text-blue-400">
+            Prabhat Engineering College
+          </div>
+
+          <div class="md:hidden">
+            <button id="menuToggle" class="text-white focus:outline-none">
+              ☰
+            </button>
+          </div>
+
+          <ul class="hidden md:flex space-x-6 items-center dropdown">
+            <li class="relative group">
+              <a href="#aboutus" class="hover:text-blue-400">About Us</a>
+              <ul
+                class="absolute left-0 mt-0 w-56 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="about-college.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >About College</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="director-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Director Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="chairman-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Chairman Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="administrator-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Administrator Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="principal-diploma-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Principal Diploma Message</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#courses" class="hover:text-blue-400">Courses</a>
+              <ul
+                class="absolute left-0 mt-0 w-72 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a href="cse.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Computer Science and Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ece.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Electronics and Communication Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ash.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Applied Science and Humanities</a
+                  >
+                </li>
+                <li>
+                  <a href="ee.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Electrical Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="me.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Mechanical Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ce.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Civil Engineering</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="polytechnic.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Polytechnic</a
+                  >
+                </li>
+                <li>
+                  <a href="mba.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >MBA</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#training" class="hover:text-blue-400"
+                >Training & Placement</a
+              >
+              <ul
+                class="absolute left-0 mt-0 w-60 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="tpcell.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Training & Placement Cell</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tpmessage.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Message from T&P Cell</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#admission" class="hover:text-blue-400">Admission</a>
+              <ul
+                class="absolute left-0 mt-0 w-56 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="registration.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Online Registration</a
+                  >
+                </li>
+                <li>
+                  <a href="fee.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Fee Structure</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="gallery.html" class="hover:text-blue-400">Gallery</a>
+            </li>
+
+            <li class="relative group">
+              <a href="#feedback" class="hover:text-blue-400">Feedback</a>
+              <ul
+                class="absolute left-0 mt-0 w-48 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="faculty-feedback.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Faculty</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="student-feedback.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Student</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="payment.html" class="hover:text-blue-400"
+                >Online Payment</a
+              >
+            </li>
+            <li>
+              <a href="career.html" class="hover:text-blue-400">Career</a>
+            </li>
+            <li>
+              <a href="contactus.html" class="hover:text-blue-400"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="md:hidden hidden flex-col space-y-2 py-4 text-sm"
+        >
+          <a href="#aboutus" class="block text-gray-300 hover:text-white"
+            >About Us</a
+          >
+          <a href="#courses" class="block text-gray-300 hover:text-white"
+            >Courses</a
+          >
+          <a href="#training" class="block text-gray-300 hover:text-white"
+            >Training & Placement</a
+          >
+          <a href="#admission" class="block text-gray-300 hover:text-white"
+            >Admission</a
+          >
+          <a href="gallery.html" class="block text-gray-300 hover:text-white"
+            >Gallery</a
+          >
+          <a href="#feedback" class="block text-gray-300 hover:text-white"
+            >Feedback</a
+          >
+          <a href="payment.html" class="block text-gray-300 hover:text-white"
+            >Online Payment</a
+          >
+          <a href="career.html" class="block text-gray-300 hover:text-white"
+            >Career</a
+          >
+          <a href="contactus.html" class="block text-gray-300 hover:text-white"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </nav>
+    <header class="bg-gray-800 py-6">
+      <div class="container mx-auto px-4">
+        <h1 class="text-3xl font-bold">
+          Electronics & Communication Engineering
+        </h1>
+        <p class="text-yellow-400 mt-2">
+          Home - Electronics & Communication Engineering
+        </p>
+      </div>
+    </header>
+
+    <section class="bg-gray-900 py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-4">Vision</h2>
+        <p class="mb-6">
+          Department of Electronics & Communication Engineering aims to deliver
+          Technical Education in the field of Electronics and Communication
+          Engineering, for producing Engineers and Technologists who are happy,
+          healthy, and competent professionals, motivated to serve the society
+          through research & innovation.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-gray-800 py-12">
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-blue-900 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-yellow-400 mb-4">Mission</h3>
+          <p>
+            1. To educate and train the students with state-of-the-art in
+            Electronics and Communication Engineering.
+          </p>
+          <p>
+            2. To prepare the students with core life skills for meeting the
+            requirements and challenges of the industry right from graduation by
+            evolving a sustainable Industry-Institute interaction system for
+            them.
+          </p>
+          <p>
+            3. To upgrade the teaching standards through controlled efforts
+            toward improvement of the qualification and expertise of the
+            teachers as well as supporting staff.
+          </p>
+          <p>
+            4. To raise awareness among the students toward solving
+            environmental challenges by offering related courses and organizing
+            seminars/workshops on these topics encouraging active participation
+            in administrative extension work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-900 py-12">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 items-center"
+      >
+        <div class="md:col-span-2">
+          <h3 class="text-2xl font-bold mb-4">HOD Desk Message</h3>
+          <p class="mb-4">
+            The Department of ELECTRONICS & COMMUNICATION ENGINEERING was
+            established in the year 2008 with an initial intake of 60 students.
+            The department imparts strong technical background and research
+            capabilities to the students to help them excel in the global
+            workforce. We strive to motivate our students to pursue
+            international exposure and to produce creative solutions to
+            society’s needs, universal moral values, and better professional
+            conduct. The department is keenly involved in keeping the students
+            aligned with the latest trends in Electronics & Communication.
+          </p>
+        </div>
+        <div class="text-center">
+          <img
+            src="https://www.prabhatengg.co.in/images/pradeep_singh.jpg"
+            alt="Mr. Pradeep Singh"
+            class="rounded-lg mx-auto mb-4"
+          />
+          <p class="font-bold">Mr. Pradeep Singh</p>
+          <p>HOD, ECE Department</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-800 py-12">
+      <div class="container mx-auto px-4">
+        <h3 class="text-xl font-bold text-yellow-400 mb-4">
+          Scope Of Employment
+        </h3>
+        <p>
+          Job opportunities include roles in Micro/Nanoelectronics, Lasers and
+          Optics, Electronic Devices, Telecommunications, Nanotechnology,
+          Robotics, Power Systems, and other advanced technologies.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-gray-900 py-12">
+      <div class="container mx-auto px-4">
+        <h3 class="text-xl font-bold text-yellow-400 mb-4">
+          Practical Exposure
+        </h3>
+        <p>
+          Laboratories include Analog System Design Laboratory, Digital
+          Electronics Laboratory, and Communication Engineering Laboratory
+          equipped with modern instruments and software tools.
+        </p>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 py-6">
+      <div class="container mx-auto px-4 text-center">
+        <p>
+          &copy; 2025 Electronics & Communication Engineering Department. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  const toggleBtn = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  toggleBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Prabhat Engineering College</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .group:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown a:hover {
+      background-color: #4a5568; /* slightly lighter on hover */
+    }
+  </style>
+  <body class="bg-gray-900 text-gray-200 font-[Poppins] min-h-screen">
+    <nav class="bg-gray-800 shadow-md">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="text-xl font-bold text-blue-400">
+            Prabhat Engineering College
+          </div>
+
+          <div class="md:hidden">
+            <button id="menuToggle" class="text-white focus:outline-none">
+              ☰
+            </button>
+          </div>
+
+          <ul class="hidden md:flex space-x-6 items-center dropdown">
+            <li class="relative group">
+              <a href="#aboutus" class="hover:text-blue-400">About Us</a>
+              <ul
+                class="absolute left-0 mt-0 w-56 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="about-college.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >About College</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="director-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Director Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="chairman-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Chairman Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="administrator-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Administrator Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="principal-diploma-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Principal Diploma Message</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#courses" class="hover:text-blue-400">Courses</a>
+              <ul
+                class="absolute left-0 mt-0 w-72 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a href="cse.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Computer Science and Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ece.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Electronics and Communication Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ash.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Applied Science and Humanities</a
+                  >
+                </li>
+                <li>
+                  <a href="ee.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Electrical Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="me.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Mechanical Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ce.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Civil Engineering</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="polytechnic.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Polytechnic</a
+                  >
+                </li>
+                <li>
+                  <a href="mba.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >MBA</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#training" class="hover:text-blue-400"
+                >Training & Placement</a
+              >
+              <ul
+                class="absolute left-0 mt-0 w-60 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="tpcell.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Training & Placement Cell</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tpmessage.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Message from T&P Cell</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#admission" class="hover:text-blue-400">Admission</a>
+              <ul
+                class="absolute left-0 mt-0 w-56 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="registration.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Online Registration</a
+                  >
+                </li>
+                <li>
+                  <a href="fee.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Fee Structure</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="gallery.html" class="hover:text-blue-400">Gallery</a>
+            </li>
+
+            <li class="relative group">
+              <a href="#feedback" class="hover:text-blue-400">Feedback</a>
+              <ul
+                class="absolute left-0 mt-0 w-48 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="faculty-feedback.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Faculty</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="student-feedback.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Student</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="payment.html" class="hover:text-blue-400"
+                >Online Payment</a
+              >
+            </li>
+            <li>
+              <a href="career.html" class="hover:text-blue-400">Career</a>
+            </li>
+            <li>
+              <a href="contactus.html" class="hover:text-blue-400"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="md:hidden hidden flex-col space-y-2 py-4 text-sm"
+        >
+          <a href="#aboutus" class="block text-gray-300 hover:text-white"
+            >About Us</a
+          >
+          <a href="#courses" class="block text-gray-300 hover:text-white"
+            >Courses</a
+          >
+          <a href="#training" class="block text-gray-300 hover:text-white"
+            >Training & Placement</a
+          >
+          <a href="#admission" class="block text-gray-300 hover:text-white"
+            >Admission</a
+          >
+          <a href="gallery.html" class="block text-gray-300 hover:text-white"
+            >Gallery</a
+          >
+          <a href="#feedback" class="block text-gray-300 hover:text-white"
+            >Feedback</a
+          >
+          <a href="payment.html" class="block text-gray-300 hover:text-white"
+            >Online Payment</a
+          >
+          <a href="career.html" class="block text-gray-300 hover:text-white"
+            >Career</a
+          >
+          <a href="contactus.html" class="block text-gray-300 hover:text-white"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-gray-700 py-2">
+      <div class="max-w-7xl mx-auto px-4 text-sm">
+        <span
+          ><a href="#" class="text-gray-400 hover:text-indigo-500"
+            >Home</a
+          ></span
+        >
+        <span class="mx-2 text-gray-500">/</span>
+        <span class="text-indigo-500">About Us</span>
+      </div>
+    </div>
+
+    <main class="max-w-4xl mx-auto px-4 py-10">
+      <h1 class="text-3xl font-bold text-indigo-500 mb-6">About Us</h1>
+
+      <div class="bg-gray-800 rounded-lg shadow p-6">
+        <p class="mb-4 leading-relaxed">
+          Prabhat Engineering College is a private institute situated in Kanpur
+          Dehat, Uttar Pradesh...
+        </p>
+
+        <p class="mb-4 leading-relaxed">
+          The finest qualified faculties from top institutions...
+        </p>
+
+        <img
+          src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+          alt="Campus"
+          class="rounded-lg w-full h-64 object-cover my-6"
+        />
+
+        <p class="mb-4 leading-relaxed">
+          The campus is lush green and fully equipped...
+        </p>
+
+        <p class="mb-4 leading-relaxed">
+          Spacious playgrounds, gymnasium, and multicuisine cafeteria...
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
+          <div class="bg-gray-700 p-4 rounded-lg">
+            <h3 class="text-lg font-semibold text-indigo-500 mb-3">
+              Our Facilities
+            </h3>
+            <ul class="list-disc list-inside space-y-1">
+              <li>Modern Laboratories</li>
+              <li>Spacious Playgrounds</li>
+              <li>Gymnasium</li>
+              <li>Multicuisine Food Court</li>
+            </ul>
+          </div>
+          <div class="bg-gray-700 p-4 rounded-lg">
+            <h3 class="text-lg font-semibold text-indigo-500 mb-3">
+              Our Achievements
+            </h3>
+            <ul class="list-disc list-inside space-y-1">
+              <li>7000+ Alumni Network</li>
+              <li>1500+ Current Students</li>
+              <li>Strong Industry Connections</li>
+              <li>Scholarship Programs</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="mb-4 leading-relaxed">
+          The institute prepares students for a competitive world...
+        </p>
+
+        <p class="mb-4 leading-relaxed">
+          With over 7000 alumni and 1500 students...
+        </p>
+
+        <blockquote
+          class="border-l-4 border-indigo-500 pl-4 italic text-gray-300"
+        >
+          "They call it an institute, we call it a culture. Be a part of our
+          culture."
+        </blockquote>
+      </div>
+    </main>
+  </body>
+</html>
+<script>
+  const toggleBtn = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  toggleBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>

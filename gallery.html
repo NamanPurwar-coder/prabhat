@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Prabhat Engineering College - Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .group:hover .dropdown {
+        display: block;
+      }
+
+      .dropdown a:hover {
+        background-color: #4a5568; /* slightly lighter on hover */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <nav class="bg-gray-800 shadow-md">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="text-xl font-bold text-blue-400">
+            Prabhat Engineering College
+          </div>
+
+          <div class="md:hidden">
+            <button id="menuToggle" class="text-white focus:outline-none">
+              ☰
+            </button>
+          </div>
+
+          <ul class="hidden md:flex space-x-6 items-center dropdown">
+            <li class="relative group">
+              <a href="#aboutus" class="hover:text-blue-400">About Us</a>
+              <ul
+                class="absolute left-0 mt-0 w-56 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="about-college.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >About College</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="director-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Director Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="chairman-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Chairman Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="administrator-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Administrator Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="principal-diploma-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Principal Diploma Message</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#courses" class="hover:text-blue-400">Courses</a>
+              <ul
+                class="absolute left-0 mt-0 w-72 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a href="cse.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Computer Science and Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ece.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Electronics and Communication Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ash.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Applied Science and Humanities</a
+                  >
+                </li>
+                <li>
+                  <a href="ee.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Electrical Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="me.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Mechanical Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ce.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Civil Engineering</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="polytechnic.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Polytechnic</a
+                  >
+                </li>
+                <li>
+                  <a href="mba.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >MBA</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#training" class="hover:text-blue-400"
+                >Training & Placement</a
+              >
+              <ul
+                class="absolute left-0 mt-0 w-60 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="tpcell.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Training & Placement Cell</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tpmessage.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Message from T&P Cell</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#admission" class="hover:text-blue-400">Admission</a>
+              <ul
+                class="absolute left-0 mt-0 w-56 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="registration.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Online Registration</a
+                  >
+                </li>
+                <li>
+                  <a href="fee.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Fee Structure</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="gallery.html" class="hover:text-blue-400">Gallery</a>
+            </li>
+
+            <li class="relative group">
+              <a href="#feedback" class="hover:text-blue-400">Feedback</a>
+              <ul
+                class="absolute left-0 mt-0 w-48 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="faculty-feedback.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Faculty</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="student-feedback.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Student</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="payment.html" class="hover:text-blue-400"
+                >Online Payment</a
+              >
+            </li>
+            <li>
+              <a href="career.html" class="hover:text-blue-400">Career</a>
+            </li>
+            <li>
+              <a href="contactus.html" class="hover:text-blue-400"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="md:hidden hidden flex-col space-y-2 py-4 text-sm"
+        >
+          <a href="#aboutus" class="block text-gray-300 hover:text-white"
+            >About Us</a
+          >
+          <a href="#courses" class="block text-gray-300 hover:text-white"
+            >Courses</a
+          >
+          <a href="#training" class="block text-gray-300 hover:text-white"
+            >Training & Placement</a
+          >
+          <a href="#admission" class="block text-gray-300 hover:text-white"
+            >Admission</a
+          >
+          <a href="gallery.html" class="block text-gray-300 hover:text-white"
+            >Gallery</a
+          >
+          <a href="#feedback" class="block text-gray-300 hover:text-white"
+            >Feedback</a
+          >
+          <a href="payment.html" class="block text-gray-300 hover:text-white"
+            >Online Payment</a
+          >
+          <a href="career.html" class="block text-gray-300 hover:text-white"
+            >Career</a
+          >
+          <a href="contactus.html" class="block text-gray-300 hover:text-white"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </nav>
+    <header class="bg-gray-800 py-6">
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold">Prabhat Engineering College</h1>
+        <p class="mt-2 text-lg">Explore Our Campus, Labs, and More!</p>
+      </div>
+    </header>
+
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/campus4.jpeg"
+              alt="Campus Image 1"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/campus3.jpeg"
+              alt="Campus Image 2"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/campus8.jpeg"
+              alt="Campus Image 3"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/campus10.jpeg"
+              alt="Campus Image 4"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab11.jpeg"
+              alt="Lab Image 1"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab19.jpeg"
+              alt="Lab Image 2"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab17.jpeg"
+              alt="Lab Image 3"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab18.jpeg"
+              alt="Lab Image 4"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab10.jpeg"
+              alt="Lab Image 5"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab15.jpeg"
+              alt="Lab Image 6"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/campus9.jpeg"
+              alt="Campus Image 5"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/class3.jpeg"
+              alt="Classroom Image 1"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab8.jpeg"
+              alt="Lab Image 7"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab7.jpeg"
+              alt="Lab Image 8"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab5.jpeg"
+              alt="Lab Image 9"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab14.jpeg"
+              alt="Lab Image 10"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/library1.jpeg"
+              alt="Library Image 1"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab13.jpeg"
+              alt="Lab Image 11"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab6.jpeg"
+              alt="Lab Image 12"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/campus17.jpeg"
+              alt="Campus Image 6"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab9.jpeg"
+              alt="Lab Image 13"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab12.jpeg"
+              alt="Lab Image 14"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/class1.jpeg"
+              alt="Classroom Image 2"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/campus5.jpeg"
+              alt="Campus Image 7"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/class2.jpeg"
+              alt="Classroom Image 3"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/campus7.jpeg"
+              alt="Campus Image 8"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab4.jpeg"
+              alt="Lab Image 15"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/campus6.jpeg"
+              alt="Campus Image 9"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab3.jpeg"
+              alt="Lab Image 16"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/campus2.jpeg"
+              alt="Campus Image 10"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab2.jpeg"
+              alt="Lab Image 17"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/library.jpeg"
+              alt="Library Image 2"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/lab1.jpeg"
+              alt="Lab Image 18"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <img
+              class="w-full h-full object-cover"
+              src="https://www.prabhatengg.co.in/gallery/mini/campus1.jpeg"
+              alt="Campus Image 11"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 py-4 text-center">
+      <p>&copy; 2025 Prabhat Engineering College. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+<script>
+  const toggleBtn = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  toggleBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+<!--
+https://www.prabhatengg.co.in/gallery/mini/campus4.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus3.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus8.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus10.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab11.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab19.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab17.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab18.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab10.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab15.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus9.jpeg
+https://www.prabhatengg.co.in/gallery/mini/class3.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab8.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab7.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab5.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab14.jpeg
+https://www.prabhatengg.co.in/gallery/mini/library1.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab13.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab6.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus17.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab9.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab12.jpeg
+https://www.prabhatengg.co.in/gallery/mini/class1.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus5.jpeg
+https://www.prabhatengg.co.in/gallery/mini/class2.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus7.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab4.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus6.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab3.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus2.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab2.jpeg
+https://www.prabhatengg.co.in/gallery/mini/library.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab1.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus1.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus11.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus14.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus12.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus15.jpeg
+https://www.prabhatengg.co.in/gallery/mini/lab16.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus16.jpeg
+https://www.prabhatengg.co.in/gallery/mini/campus13.jpeg
+https://www.prabhatengg.co.in/gallery/mini/euphoria.jpeg
+https://www.prabhatengg.co.in/img/banner/5.jpg 
+-->

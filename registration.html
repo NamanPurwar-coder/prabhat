@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .group:hover .dropdown {
+        display: block;
+      }
+
+      .dropdown a:hover {
+        background-color: #4a5568; /* slightly lighter on hover */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-800 text-white">
+    <nav class="bg-gray-800 shadow-md">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="text-xl font-bold text-blue-400">
+            Prabhat Engineering College
+          </div>
+
+          <div class="md:hidden">
+            <button id="menuToggle" class="text-white focus:outline-none">
+              ☰
+            </button>
+          </div>
+
+          <ul class="hidden md:flex space-x-6 items-center dropdown">
+            <li class="relative group">
+              <a href="#aboutus" class="hover:text-blue-400">About Us</a>
+              <ul
+                class="absolute left-0 mt-0 w-56 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="about-college.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >About College</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="director-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Director Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="chairman-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Chairman Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="administrator-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Administrator Message</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="principal-diploma-message.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Principal Diploma Message</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#courses" class="hover:text-blue-400">Courses</a>
+              <ul
+                class="absolute left-0 mt-0 w-72 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a href="cse.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Computer Science and Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ece.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Electronics and Communication Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ash.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Applied Science and Humanities</a
+                  >
+                </li>
+                <li>
+                  <a href="ee.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Electrical Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="me.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Mechanical Engineering</a
+                  >
+                </li>
+                <li>
+                  <a href="ce.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Civil Engineering</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="polytechnic.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Polytechnic</a
+                  >
+                </li>
+                <li>
+                  <a href="mba.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >MBA</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#training" class="hover:text-blue-400"
+                >Training & Placement</a
+              >
+              <ul
+                class="absolute left-0 mt-0 w-60 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="tpcell.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Training & Placement Cell</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tpmessage.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Message from T&P Cell</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="relative group">
+              <a href="#admission" class="hover:text-blue-400">Admission</a>
+              <ul
+                class="absolute left-0 mt-0 w-56 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="registration.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Online Registration</a
+                  >
+                </li>
+                <li>
+                  <a href="fee.html" class="block px-4 py-2 hover:bg-gray-600"
+                    >Fee Structure</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="gallery.html" class="hover:text-blue-400">Gallery</a>
+            </li>
+
+            <li class="relative group">
+              <a href="#feedback" class="hover:text-blue-400">Feedback</a>
+              <ul
+                class="absolute left-0 mt-0 w-48 bg-gray-700 rounded-md shadow-lg hidden group-hover:block z-10"
+              >
+                <li>
+                  <a
+                    href="faculty-feedback.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Faculty</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="student-feedback.html"
+                    class="block px-4 py-2 hover:bg-gray-600"
+                    >Student</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="payment.html" class="hover:text-blue-400"
+                >Online Payment</a
+              >
+            </li>
+            <li>
+              <a href="career.html" class="hover:text-blue-400">Career</a>
+            </li>
+            <li>
+              <a href="contactus.html" class="hover:text-blue-400"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="md:hidden hidden flex-col space-y-2 py-4 text-sm"
+        >
+          <a href="#aboutus" class="block text-gray-300 hover:text-white"
+            >About Us</a
+          >
+          <a href="#courses" class="block text-gray-300 hover:text-white"
+            >Courses</a
+          >
+          <a href="#training" class="block text-gray-300 hover:text-white"
+            >Training & Placement</a
+          >
+          <a href="#admission" class="block text-gray-300 hover:text-white"
+            >Admission</a
+          >
+          <a href="gallery.html" class="block text-gray-300 hover:text-white"
+            >Gallery</a
+          >
+          <a href="#feedback" class="block text-gray-300 hover:text-white"
+            >Feedback</a
+          >
+          <a href="payment.html" class="block text-gray-300 hover:text-white"
+            >Online Payment</a
+          >
+          <a href="career.html" class="block text-gray-300 hover:text-white"
+            >Career</a
+          >
+          <a href="contactus.html" class="block text-gray-300 hover:text-white"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="max-w-4xl mx-auto mt-10 p-5 bg-gray-900 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-semibold text-center mb-6">
+        Student Registration
+      </h2>
+      <form action="#" method="POST" enctype="multipart/form-data">
+        <div class="mb-4">
+          <label for="course" class="block text-sm font-medium"
+            >Course Name</label
+          >
+          <select
+            id="course"
+            name="course"
+            class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+          >
+            <option value="mba">MBA</option>
+            <option value="btech">BTech</option>
+            <option value="polytechnic">Polytechnic</option>
+            <option value="diploma">Diploma</option>
+          </select>
+        </div>
+
+        <h3 class="text-xl font-semibold mb-4">Personal Details</h3>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label for="name" class="block text-sm font-medium"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+              required
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label for="phone" class="block text-sm font-medium">Phone</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+              required
+            />
+          </div>
+          <div>
+            <label for="dob" class="block text-sm font-medium"
+              >Date of Birth</label
+            >
+            <input
+              type="date"
+              id="dob"
+              name="dob"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+              required
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label for="gender" class="block text-sm font-medium">Gender</label>
+            <select
+              id="gender"
+              name="gender"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+            >
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="caste" class="block text-sm font-medium">Caste</label>
+            <input
+              type="text"
+              id="caste"
+              name="caste"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+            />
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="photo" class="block text-sm font-medium"
+            >Upload Photo</label
+          >
+          <input
+            type="file"
+            id="photo"
+            name="photo"
+            class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+          />
+        </div>
+
+        <h3 class="text-xl font-semibold mb-4">Communication Details</h3>
+        <div class="mb-4">
+          <label for="address" class="block text-sm font-medium"
+            >Postal Address</label
+          >
+          <textarea
+            id="address"
+            name="address"
+            rows="3"
+            class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+          ></textarea>
+        </div>
+        <div class="grid grid-cols-3 gap-4 mb-4">
+          <div>
+            <label for="country" class="block text-sm font-medium"
+              >Country</label
+            >
+            <input
+              type="text"
+              id="country"
+              name="country"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+            />
+          </div>
+          <div>
+            <label for="state" class="block text-sm font-medium">State</label>
+            <input
+              type="text"
+              id="state"
+              name="state"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+            />
+          </div>
+          <div>
+            <label for="city" class="block text-sm font-medium">City</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label for="pincode" class="block text-sm font-medium"
+              >Pincode</label
+            >
+            <input
+              type="text"
+              id="pincode"
+              name="pincode"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+            />
+          </div>
+          <div>
+            <label for="father_name" class="block text-sm font-medium"
+              >Father's Name</label
+            >
+            <input
+              type="text"
+              id="father_name"
+              name="father_name"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label for="father_mobile" class="block text-sm font-medium"
+              >Father's Mobile No</label
+            >
+            <input
+              type="text"
+              id="father_mobile"
+              name="father_mobile"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+            />
+          </div>
+          <div>
+            <label for="father_occupation" class="block text-sm font-medium"
+              >Father's Occupation</label
+            >
+            <input
+              type="text"
+              id="father_occupation"
+              name="father_occupation"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label for="mother_name" class="block text-sm font-medium"
+              >Mother's Name</label
+            >
+            <input
+              type="text"
+              id="mother_name"
+              name="mother_name"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+            />
+          </div>
+          <div>
+            <label
+              for="academic_qualification"
+              class="block text-sm font-medium"
+              >Academic Qualification</label
+            >
+            <input
+              type="text"
+              id="academic_qualification"
+              name="academic_qualification"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label for="institute_name" class="block text-sm font-medium"
+              >Institute Name</label
+            >
+            <input
+              type="text"
+              id="institute_name"
+              name="institute_name"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+            />
+          </div>
+          <div>
+            <label for="percentage" class="block text-sm font-medium"
+              >Percentage/Grade</label
+            >
+            <input
+              type="text"
+              id="percentage"
+              name="percentage"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label for="exam_board" class="block text-sm font-medium"
+              >Examination Board</label
+            >
+            <input
+              type="text"
+              id="exam_board"
+              name="exam_board"
+              class="w-full p-2 mt-2 bg-gray-700 border border-gray-600 rounded-md"
+            />
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+        </div>
+
+        <div class="mb-4 flex items-center">
+          <input
+            type="checkbox"
+            id="terms"
+            name="terms"
+            class="mr-2"
+            required
+          />
+          <label for="terms" class="text-sm"
+            >I agree to the
+            <a href="#" class="text-blue-500">terms and conditions</a>.</label
+          >
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-blue-500 text-white p-3 rounded-md"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
+<script>
+  const toggleBtn = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  toggleBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
